@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style> 
+    .inputEmail textarea{
+        resize: none;
+    }
+    .inputEmail{
+        display:flex;
+        align-items: center;
+    }
+        </style>
 </head>
 <body>
+
+    <div id="Exs1-2"></div>
+    <div id="Exs3">
+        <div class="inputName"> 
+            <span>Enter your name</span>
+            <input type="text" id = 'nameValid' placeholder="Только латинские буквы.">
+        </div>
+        <div class="inputTel">
+            <span>Enter your phone number</span>
+            <input type="text" id = 'phoneValid' placeholder = '+7(900)000-000'>
+        </div>
+        <div class="inputEmail">
+            <span>Enter your Email</span>
+            <input type="text" id = 'emailValid' placeholder = 'email@mail.com'>
+        </div>
+        <div class="inputEmail">
+            <span>Comment this!</span>
+            <textarea id="commentValid" cols="30" rows="2" ></textarea>
+        </div>
+        <span id = 'validation'></span>
+
+    </div>
     <script src = 'js.js'></script>
+
+
 </body>
 </html>
