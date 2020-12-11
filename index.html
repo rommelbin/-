@@ -5,14 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style> 
-    .inputEmail textarea{
-        resize: none;
-    }
+
     .inputEmail{
         display:flex;
         align-items: center;
     }
-        </style>
+    #nameValid, #phoneValid, #emailValid, #commentValid {
+        margin-bottom: 10px;
+    }
+    #nameValid{ 
+        margin-left: 70px;
+    }
+    #phoneValid{ 
+        margin-left: 13px;
+    }
+    #emailValid {
+        margin-left: 71px;
+    }
+    #commentValid {
+        width: 171px;
+        height: 60px;
+        resize: none;
+        margin-left: 80px;
+    }
+    </style>
 </head>
 <body>
 
@@ -30,9 +46,9 @@
             <span>Enter your Email</span>
             <input type="text" id = 'emailValid' placeholder = 'email@mail.com'>
         </div>
-        <div class="inputEmail">
+        <div class="inputComment">
             <span>Comment this!</span>
-            <textarea id="commentValid" cols="30" rows="2" ></textarea>
+            <textarea id="commentValid"></textarea>
         </div>
         <span id = 'validation'></span>
 
